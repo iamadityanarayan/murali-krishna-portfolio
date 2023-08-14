@@ -1,0 +1,63 @@
+@import '../../breakpoints.scss';
+.banner {
+  background-color: var(--lightBlue);
+  background-image: url("../../assets/images/others/bg_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  .ux {
+    color: var(--ux);
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 326px;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .__img {
+    z-index: 99;
+  }
+  .img-holder {
+    @media (min-width:$md) {
+      width: 300px;
+      height: 300px;
+    }
+    @media (min-width:$xxl) {
+      width: 360px;
+      height: 360px;
+    }
+    z-index: 999;
+   
+    position: relative;
+  }
+  .img-holder-2 {
+    width: 220px;
+    height: 220px;
+  }
+
+  .center-l {
+    position: relative;
+  }
+  .__text-content {
+    span,
+    p {
+      font-size: 28px;
+    }
+    p {
+      font-weight: 700;
+      line-height: 1;
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+  .text-content {
+    span,
+    p {
+      font-size: 28px;
+    }
+    p {
+      font-weight: 700;
+      line-height: 1;
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+}

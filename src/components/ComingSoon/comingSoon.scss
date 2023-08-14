@@ -1,0 +1,94 @@
+@import '../../breakpoints.scss';
+.section-comingSoon {
+  background-color: var(--cream);
+
+  .section-work-left {
+    .bg-image-color {
+      background-color: rgba(217, 209, 209, 1);
+    }
+  }
+  .bg-image-color {
+    background-color: rgba(217, 209, 209, 1);
+  }
+
+  .section-work-right {
+    .project-title {
+      font-weight: 700;
+      @media (max-width: $sm) {
+        font-size: 24px;
+      }
+      @media (min-width: $sm) {
+        font-size: 30px;
+      }
+      @media (min-width: $md) {
+        font-size: 38px;
+      }
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    ul > li {
+      // font-size: 20px;
+      @media (max-width: $sm) {
+        font-size: 14px;
+      }
+      @media (min-width: $sm) {
+        font-size: 16px;
+      }
+      @media (min-width: $md) {
+        font-size: 20px;
+      }
+    }
+    .project-overview {
+      font-weight: 700;
+      @media (max-width: $sm) {
+        font-size: 20px;
+      }
+      @media (min-width: $sm) {
+        font-size: 24px;
+      }
+      @media (min-width: $md) {
+        font-size: 28px;
+      }
+    }
+    .project-description {
+      font-size: 16px;
+      @media (max-width: $sm) {
+        font-size: 14px;
+      }
+      @media (min-width: $sm) {
+        font-size: 16px;
+      }
+    }
+    .p-title {
+      // font-size: 20px;
+      font-weight: 700;
+      @media (max-width: $sm) {
+        font-size: 16px;
+      }
+      @media (min-width: $sm) {
+        font-size: 16px;
+      }
+      // @media (min-width: $md) {
+      //   font-size: 20px;
+      // }
+    }
+    .p-content {
+      // font-size: 16px;
+      color: rgba(6, 69, 173, 1);
+      cursor: pointer;
+      @media (max-width: $sm) {
+        font-size: 14px;
+      }
+      @media (min-width: $sm) {
+        font-size: 14px;
+      }
+      // @media (min-width: $md) {
+      //   font-size: 28px;
+      // }
+    }
+  }
+
+  
+}

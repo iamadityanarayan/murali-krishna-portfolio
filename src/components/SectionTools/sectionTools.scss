@@ -1,0 +1,12 @@
+@import '../../breakpoints.scss';
+
+.section-tools{
+ 
+  .section-icons{
+    padding-bottom: 4rem;
+    @media (min-width: $xl) {
+      padding-bottom: 6rem;
+      width: 75%;
+    }
+  }
+}

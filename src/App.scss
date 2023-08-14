@@ -1,0 +1,49 @@
+
+:root {
+  --lightBlue: #cdecff;
+  --lightBlue2: rgba(231, 240, 253, 1);
+  --darkBlue: #072146;
+  --black: rgba(16, 16, 16, 1);
+  --cream: rgba(251, 235, 213, 0.37);
+  --skinColor: rgba(254, 248, 239, 1);
+  --ux: rgba(193, 197, 213, 0.59);
+  --lightGrey: rgba(217, 217, 217, 1);
+}
+
+#root {
+  position: relative;
+}
+.font-d{
+  font-family: 'Dancing Script' !important;
+// font-family: 'Nunito', sans-serif !important;
+}
+$sm:576px;
+$md: 768px;
+$lg : 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+.bg-menu {
+  background-color: var(--darkBlue);
+  background-image: url("./assets/images/home/repeat.png");
+  // background-image: url("https://github.com/iamadityanarayan/Images/blob/main/Murali%20Krishna/Home%20Page/menu.jpg?raw=true");
+  background-repeat: no-repeat;
+  // object-fit: cover;
+  background-size: contain;
+  background-position: center right;
+  color: #fff;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.container-fluid{
+  max-width: 1920px !important;
+}
+
+.h{
+  transition: .3s;
+}
+.h:hover{
+  transform: translateY(-.5rem);
+}

@@ -1,0 +1,45 @@
+
+@import '../../breakpoints.scss';
+
+@media (min-width:375px) {
+  .section-heading{
+    font-size: 34px;
+  }
+}
+.section-heading {
+  // font-size: 64px;
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+  font-weight: 400;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 2px;
+    background-color: rgba(111, 113, 115, 1);
+    bottom: 2px;
+    right: -35px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 2px;
+    background-color: rgba(111, 113, 115, 1);
+    bottom: -6px;
+    right: -55px;
+  }
+
+  @media screen and (max-width:$sm) {
+    font-size: 36px;
+  }
+  @media screen and (min-width:$md) {
+    font-size: 48px;
+  }
+  @media screen and (min-width:$xl) {
+    font-size: 64px;
+  }
+}

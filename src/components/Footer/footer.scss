@@ -1,0 +1,65 @@
+@import '../../breakpoints.scss';
+.footer{
+  background-color: var(--darkBlue);
+  padding: 3.5rem 1rem;
+  color: white;
+  min-height: 551px;
+  background-image: url('../../assets/images/home/ooorganize.png');
+  background-repeat: no-repeat;
+  
+  h4 {
+    // font-size: 48px;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    @media (max-width: $sm) {
+      font-size: 38px;
+    }
+    @media (min-width: $sm) {
+      font-size: 38px;
+    }
+    @media (min-width: $md) {
+      font-size: 48px;
+    }
+  }
+  
+  p{
+    font-size: 32px;
+    @media (max-width: $sm) {
+      font-size: 28px;
+    }
+    @media (min-width: $sm) {
+      font-size: 30px;
+    }
+    @media (min-width: $md) {
+      font-size: 32px;
+    }
+    margin: 0;
+  }
+  p:nth-child(2){
+    margin-top: 4.5rem;
+  }
+  p:nth-child(2n-1){
+    margin-bottom: 4.5rem;
+  }
+  
+  span{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 24px;
+    // padding-bottom: 3rem;
+  }
+  
+  .links {
+    // width: 25%;
+    // display: flex;
+    // align-items: center;
+    // flex : 0 auto;
+    margin-top: 4rem;
+    div {
+      font-size: 24px;
+      margin: 0.625rem 0;
+    }
+    .vstack{
+      align-content: center;
+    }
+  }
+}

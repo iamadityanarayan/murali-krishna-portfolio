@@ -1,0 +1,54 @@
+.visualMuseum {
+  background-color: var(--skinColor);
+  .hero__image {
+    position: relative;
+    img {
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      min-height: 250px;
+      z-index: 0;
+    }
+    .section__title {
+      background-color: var(--skinColor);
+      color: var(--black);
+      font-size: 40px;
+      position: absolute;
+      font-weight: 700;
+      bottom: -25px;
+      left: 9%;
+      padding: 10px 25px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+  }
+
+ 
+
+  .grid-background {
+    background-color: var(--skinColor);
+  }
+
+  .grid__image {
+    min-height: 241px;
+    background-size: cover;
+  }
+  .nav-tabs .nav-link {
+    margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
+    border: 1px solid grey;
+    border-radius: 35px;
+    color: var(--black);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .nav-tabs .nav-link.active {
+    color: var(--bs-nav-tabs-link-active-color);
+    background-color: var(--bs-nav-tabs-link-active-bg);
+    border-color: grey;
+    font-weight: 700;
+  }
+  
+  .image-border{
+    background-color: var(--lightGrey);
+  }
+}
