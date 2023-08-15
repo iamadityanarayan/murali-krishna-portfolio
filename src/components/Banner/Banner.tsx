@@ -1,13 +1,10 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-// import Profile from "../../assets/images/home/profile.png";
 import "./banner.scss";
+import { Col, Container, Row } from "react-bootstrap";
 import { Fade, Slide } from "react-awesome-reveal";
-type Props = {};
 
 const Profile = `https://github.com/iamadityanarayan/Images/blob/main/Murali%20Krishna/Home%20Page/profile.jpg?raw=true`
 
-const Banner = (props: Props) => {
+const Banner = () => {
   return (
     <div className="banner">
       <Container fluid className="">
@@ -20,7 +17,7 @@ const Banner = (props: Props) => {
           </Col>
           <Col lg={7}>
             <div className="text-content">
-              <Fade cascade damping={0.9}>
+              <Fade cascade damping={0.6} delay={1500}>
               <div className="mb-4">
                 <span>Hello, I am Murali Krishna!</span>
               </div>

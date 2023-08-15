@@ -1,6 +1,8 @@
 .myPassion {
   background-color: var(--skinColor);
-
+  .space-y{
+    margin: 6rem 0;
+  }
   .hero__image {
     position: relative;
     img {

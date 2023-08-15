@@ -1,15 +1,12 @@
+import "./menu.scss";
 import { useState } from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Icons from "../../assets/icons/Icons";
-import "./menu.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import SocialMediaIcons from "../SocialIcons/SocialMediaIcons";
-type Props = {
-  handleClick: () => void;
-};
 
-const Menu = (props: Props) => {
+const Menu = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -46,7 +43,6 @@ const Menu = (props: Props) => {
             placement="end"
             className="w-100 bg-menu"
             onHide={handleClose}
-            {...props}
           >
             <div
               className="ms-auto me-4 cursor-pointer shadow-0 shadow-none border-0 mt-4"
@@ -57,7 +53,7 @@ const Menu = (props: Props) => {
             </div>
             <Offcanvas.Body>
               <div className="menu">
-                <ul className="menu-group ms-auto">
+                <ul className="menu-group ms-auto pt-3 pt-md-5">
                   <Link
                     to="/"
                     onClick={handleClose}
@@ -67,10 +63,7 @@ const Menu = (props: Props) => {
                   </Link>
                   <Link
                     to="/"
-                    onClick={() => {
-                      handleClose();
-                      props.handleClick();
-                    }}
+                    onClick={handleClose}
                     className="_link bg-transparent border-0 text-white text-start"
                   >
                     Work

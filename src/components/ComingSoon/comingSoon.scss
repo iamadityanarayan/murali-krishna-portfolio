@@ -1,6 +1,6 @@
 @import '../../breakpoints.scss';
 .section-comingSoon {
-  background-color: var(--cream);
+  background-color: var(--lightBlue2);
 
   .section-work-left {
     .bg-image-color {
@@ -23,6 +23,10 @@
       @media (min-width: $md) {
         font-size: 38px;
       }
+      @media (min-width: $xxl) {
+        font-size: 58px;
+        
+      }
     }
     ul {
       padding: 0;
@@ -39,6 +43,10 @@
       @media (min-width: $md) {
         font-size: 20px;
       }
+      @media (min-width: $xxl) {
+        font-size: 30px;
+        margin-bottom: 1rem;
+      }
     }
     .project-overview {
       font-weight: 700;
@@ -51,6 +59,9 @@
       @media (min-width: $md) {
         font-size: 28px;
       }
+      @media (min-width: $xxl) {
+        font-size: 30px;
+      }
     }
     .project-description {
       font-size: 16px;
@@ -60,6 +71,9 @@
       @media (min-width: $sm) {
         font-size: 16px;
       }
+      @media (min-width: $xxl) {
+        font-size: 20px;
+      }
     }
     .p-title {
       // font-size: 20px;
@@ -68,11 +82,11 @@
         font-size: 16px;
       }
       @media (min-width: $sm) {
-        font-size: 16px;
+        font-size: 18px;
       }
-      // @media (min-width: $md) {
-      //   font-size: 20px;
-      // }
+      @media (min-width: $xxl) {
+        font-size: 20px;
+      }
     }
     .p-content {
       // font-size: 16px;
@@ -84,9 +98,9 @@
       @media (min-width: $sm) {
         font-size: 14px;
       }
-      // @media (min-width: $md) {
-      //   font-size: 28px;
-      // }
+      @media (min-width: $xxl) {
+        font-size: 18px;
+      }
     }
   }
 

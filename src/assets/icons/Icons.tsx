@@ -67,8 +67,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const twitter = () => (
     <svg
-      width="60"
-      height="60"
+      width={`${width ? width : "60"}`}
+      height={`${height ? height : "60"}`}
       viewBox="0 0 60 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -129,8 +129,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const facebook = () => (
     <svg
-      width="60"
-      height="60"
+      width={`${width ? width : "60"}`}
+      height={`${height ? height : "60"}`}
       viewBox="0 0 60 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -183,8 +183,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const frame = () => (
     <svg
-      width="60"
-      height="60"
+      width={`${width ? width : "60"}`}
+      height={`${height ? height : "60"}`}
       viewBox="0 0 60 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -210,8 +210,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const arrowUp = () => (
     <svg
-      width="16"
-      height="10"
+      width={`${width ? width : "16"}`}
+      height={`${height ? height : "10"}`}
       viewBox="0 0 16 10"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -228,8 +228,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const figma = () => (
     <svg
-      width="100"
-      height="100"
+      width={`${width ? width : "60"}`}
+      height={`${height ? height : "60"}`}
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -247,8 +247,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const adobeXD = () => (
     <svg
-      width="100"
-      height="100"
+      width={`${width ? width : "60"}`}
+      height={`${height ? height : "60"}`}
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -266,8 +266,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const photoshop = () => (
     <svg
-      width="101"
-      height="100"
+      width={`${width ? width : "60"}`}
+      height={`${height ? height : "60"}`}
       viewBox="0 0 101 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -285,8 +285,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const inDesign = () => (
     <svg
-      width="100"
-      height="100"
+      width={`${width ? width : "60"}`}
+      height={`${height ? height : "60"}`}
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -304,8 +304,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const illustration = () => (
     <svg
-      width="100"
-      height="100"
+      width={`${width ? width : "60"}`}
+      height={`${height ? height : "60"}`}
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -323,8 +323,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const canva = () => (
     <svg
-      width="100"
-      height="100"
+      width={`${width ? width : "60"}`}
+      height={`${height ? height : "60"}`}
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -342,8 +342,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const arrowDown = () => (
     <svg
-      width="100"
-      height="100"
+      width={`${width ? width : "60"}`}
+      height={`${height ? height : "60"}`}
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -357,8 +357,8 @@ const Icons = ({ icon, width, height, fill }: Props) => {
 
   const dot = () => (
     <svg
-      width="10"
-      height="10"
+      width={`${width ? width : "10"}`}
+      height={`${height ? height : "10"}`}
       viewBox="0 0 10 10"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

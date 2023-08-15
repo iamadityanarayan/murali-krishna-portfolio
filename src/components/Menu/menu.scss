@@ -4,13 +4,20 @@
   z-index: 88;
 .menu-group {
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
+  // flex-direction: column;
+  // width: max-content;
+  // padding-right: 8rem;
+  // display: flex;
+  justify-content: center;
   flex-direction: column;
   width: max-content;
   padding-right: 8rem;
+  overflow: hidden;
+  height: 70vh;
   ._link{
     list-style: none;
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 1.5rem;
     text-decoration: none;
   }
@@ -34,7 +41,7 @@
   padding-right: 8rem;
   ._link{
     list-style: none;
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 1.5rem;
     text-decoration: none;
   }

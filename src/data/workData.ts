@@ -30,7 +30,7 @@ export const workData: WorkDataType = [
   },
   {
     image: `${Image2}`,
-    projectTitle: "Helping hands",
+    projectTitle: "Helping Hands",
     techList: ["Research", "UX design", "UI design"],
     projectOveriew: "Project Overview",
     projectDescription: `Designing a user-friendly and visually appealing interface for a web application. The objective is to demonstrate your understanding of user-centred design principles, information architecture, and visual design skills. specifications.`,

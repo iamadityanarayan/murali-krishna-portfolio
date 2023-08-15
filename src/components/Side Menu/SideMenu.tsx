@@ -1,8 +1,4 @@
-import React from 'react'
-
-type Props = {}
-
-const SideMenu = (props: Props) => {
+const SideMenu = () => {
   return (
     <div>SideMenu</div>
   )
