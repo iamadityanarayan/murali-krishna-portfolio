@@ -53,7 +53,7 @@ const Menu = () => {
             </div>
             <Offcanvas.Body>
               <div className="menu">
-                <ul className="menu-group ms-auto pt-3 pt-md-5">
+                <ul className="menu-group ms-md-auto pt-3 pt-md-5">
                   <Link
                     to="/"
                     onClick={handleClose}

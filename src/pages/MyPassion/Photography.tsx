@@ -8,10 +8,10 @@ import { Box, ImageList, ImageListItem } from "@mui/material";
 type Props = {};
 
 const Photography = (props: Props) => {
-  const wrapperRef = useRef<HTMLDivElement>(null);
-  const imagesLoaded = useOnLoadImages(wrapperRef);
+  const wrapperRef2 = useRef<HTMLDivElement>(null);
+  const imagesLoaded = useOnLoadImages(wrapperRef2);
   return (
-    <div ref={wrapperRef}>
+    <div ref={wrapperRef2}>
       {!imagesLoaded ? (
         <>
           <Oval

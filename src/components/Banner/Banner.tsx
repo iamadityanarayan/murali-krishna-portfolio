@@ -15,7 +15,7 @@ const Banner = () => {
             <Slide direction="right" className="__img text-end rounded-circle">
               {/* <img src={Profile} className="img-holder rounded-circle" alt="" /> */}
               <LazyLoadImage
-                src={Profile}
+                src={UserPlaceholder}
                 // width={600}
                 // height={400}
                 className="img-holder rounded-circle"
@@ -40,29 +40,34 @@ const Banner = () => {
 
         <Row className="justify-content-center d-lg-none flex-column  pt-5 align-items-center mx-auto">
           <Col sm={12} lg={5} className="mx-auto center-left">
-            <div className="text-center rounded-circle animate__animated animate__slideInRight">
+            <Slide direction="right" className="__img text-center rounded-circle">
               {/* <img
                 src={Profile}
                 className="img-holder-2 rounded-circle"
                 alt=""
               /> */}
               <LazyLoadImage
-                src={Profile}
+                src={UserPlaceholder}
                 // width={600}
                 // height={400}
                 className="img-holder-2 rounded-circle"
                 placeholderSrc={UserPlaceholder}
                 alt="Image Alt"
               />
-            </div>
+            </Slide>
           </Col>
           <Col sm={12} lg={7} className="py-5">
             <div className="__text-content text-center">
-              <h2 className="mb-4">Hello, I am Murali Krishna!</h2>
-              <p>I design</p>
-              <p>functional and visually</p>
-              <p>pleasing interfaces for mobile and web.</p>
+              <Fade cascade damping={0.6} delay={1500}>
+                <div className="mb-4">
+                  <span>Hello, I am Murali Krishna!</span>
+                </div>
+                <p>I design</p>
+                <p>functional and visually</p>
+                <p>pleasing interfaces for mobile and web.</p>
+              </Fade>
             </div>
+           
           </Col>
         </Row>
       </Container>

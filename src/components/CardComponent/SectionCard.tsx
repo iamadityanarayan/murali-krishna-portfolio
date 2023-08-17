@@ -13,11 +13,11 @@ const SectionCard = ({ data }: Props) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ["0 1", "1 1"],
     // offset: ["end end", "start start"],
   });
 
-  const scaleProgress = useTransform(scrollYProgress, [0.9, 1], [0.9, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
   const opcaityProgress = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
 
   return (
@@ -44,9 +44,11 @@ const SectionCard = ({ data }: Props) => {
               </div>
             </Col>
             <Col className="section-work-right" xs={12} lg={6} xl={7}>
-            {/* <Fade > */}
-              <Fade duration={100} cascade className="project-title">{item.projectTitle}</Fade>
-            {/* </Fade> */}
+              {/* <Fade > */}
+              <Fade duration={100} cascade className="project-title">
+                {item.projectTitle}
+              </Fade>
+              {/* </Fade> */}
               <ul className="d-flex  flex-xl-row gap-3">
                 {item?.techList?.map((element, elIndex) => (
                   <li key={elIndex} className="d-flex align-items-center gap-2">
@@ -60,10 +62,12 @@ const SectionCard = ({ data }: Props) => {
               <h4 className="project-overview">{item.projectOveriew}</h4>
               <p className="project-description">{item.projectDescription}</p>
               {item?.moreContent.map((e, i) => (
-                <div key={i} className='mb-3'>
+                <div key={i} className="mb-3">
                   <h4 className="p-title m-0">{e.title}</h4>
                   {e?.link ? (
-                    <a href={e.link} className="p-content mb-2">{e.desc}</a>
+                    <a href={e.link} className="p-content mb-2">
+                      {e.desc}
+                    </a>
                   ) : (
                     <p className="p-content mb-2">{e.desc}</p>
                   )}
