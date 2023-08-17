@@ -13,7 +13,7 @@ const SectionCard = ({ data }: Props) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1 1"],
+    offset: ["0 2", "1.33 2"],
     // offset: ["end end", "start start"],
   });
 
