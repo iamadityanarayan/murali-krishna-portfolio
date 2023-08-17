@@ -1,7 +1,7 @@
 import "./myPassion.scss";
 
 import { Col, Container, Row } from "react-bootstrap";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Tab from "react-bootstrap/Tab";
 import Sketching from "./Sketching";
@@ -12,7 +12,15 @@ const Hero2 = `https://github.com/iamadityanarayan/Images/blob/main/Murali%20Kri
 
 const MyPassion = () => {
   const [toggle, setToggle] = useState<boolean>(true);
-  const handleToggle = () => setToggle(!toggle);
+  
+  // TODO: improve this
+  const handleSetTrue = () => setToggle(true);
+  const handleSetFalse = () => setToggle(false);
+  
+  useEffect(() => {
+    
+  }, [toggle])
+  
   return (
     <>
       <div className="myPassion">
@@ -33,12 +41,12 @@ const MyPassion = () => {
                       className="justify-content-center gap-3 mb-4"
                     >
                       <Nav.Item>
-                        <Nav.Link onClick={handleToggle} eventKey="first">
+                        <Nav.Link onClick={handleSetTrue} eventKey="first">
                           Sketching
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link onClick={handleToggle} eventKey="second">
+                        <Nav.Link onClick={handleSetFalse} eventKey="second">
                           Photograph
                         </Nav.Link>
                       </Nav.Item>
