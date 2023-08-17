@@ -50,7 +50,7 @@ const Banner = () => {
                 src={Profile}
                 // width={600}
                 // height={400}
-                className="img-holder rounded-circle"
+                className="img-holder-2 rounded-circle"
                 placeholderSrc={UserPlaceholder}
                 alt="Image Alt"
               />
