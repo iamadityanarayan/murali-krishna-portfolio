@@ -60,7 +60,7 @@ export const workData: WorkDataType = [
       },
       {
         title: "Prototype link",
-        desc: "OrganizationPrototype link",
+        desc: "Organization Prototype link",
       },
     ],
   },
