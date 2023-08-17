@@ -57,10 +57,12 @@ export const workData: WorkDataType = [
       {
         title: "Case Study",
         desc: "Organization",
+        link: `https://www.behance.net/gallery/177448921/Organization-Internal-Portal-For-employe`
       },
       {
         title: "Prototype link",
         desc: "Organization Prototype link",
+        link: `https://www.figma.com/proto/7OEoufJ6fs8n04tQqHhl2s/My-Projects?page-id=22%3A2&type=design&node-id=22-3&viewport=7956%2C1062%2C1.45&t=LjF32PSgGWDpA4MN-1&scaling=scale-down-width&starting-point-node-id=22%3A3&mode=design`
       },
     ],
   },
