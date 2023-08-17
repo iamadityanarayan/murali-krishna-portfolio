@@ -23,18 +23,18 @@ export const comingSoon: WorkDataType = [
   },
   {
     image: `${Image5}`,
-    projectTitle: "Lorem Ipsum",
+    projectTitle: "Ai.Voice Changer",
     techList: ["Research", "UX design", "UI design"],
     projectOveriew: "Project Overview",
-    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+    projectDescription: `The AI Voice Changer project aims to develop an innovative tool that utilizes artificial intelligence to modify and transform vocal tones and characteristics. This technology offers users the ability to alter their voices in real-time for various creative and practical applications.`,
     moreContent: [
       {
         title: "Case Study",
-        desc: "Case Study",
+        desc: "Ai.Voice Changer Case Study",
       },
       {
         title: "Prototype link",
-        desc: "Prototype link",
+        desc: "Ai.Voice Changer Prototype link",
       },
     ],
   },
