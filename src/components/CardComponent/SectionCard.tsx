@@ -17,7 +17,7 @@ const SectionCard = ({ data }: Props) => {
     // offset: ["end end", "start start"],
   });
 
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0.9, 1], [0.9, 1]);
   const opcaityProgress = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
 
   return (
