@@ -9,7 +9,7 @@ export const comingSoon: WorkDataType = [
     projectTitle: "Labor Directory",
     techList: ["Research", "UX design", "UI design"],
     projectOveriew: "Project Overview",
-    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. .`,
+    projectDescription: `The Labor Directory Project creates an online hub for labor-related information, including laws, rights, jobs, and services. It empowers users with easy access to credible resources, promoting informed decisions and transparency. This collaborative effort enhances understanding within the labor community.`,
     moreContent: [
       {
         title: "Case Study",
