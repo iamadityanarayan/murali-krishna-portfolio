@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 import BackToTop from "./components/BackToTop/BackToTop";
@@ -37,6 +38,13 @@ const App = () => {
     }, 1000);
     return () => clearTimeout(timer);
   }, [pathname]);
+  const work: any = useRef(null);
+  const scrollDown = () => {
+    window.scrollTo({
+      top: work.current.offsetTop,
+      behavior: 'smooth',
+    });
+  };
 
   if (isLoading) {
     return (
@@ -84,9 +92,9 @@ const App = () => {
         </>
       ) : (
         <>
-          <Menu />
+          <Menu scrollDown={scrollDown} />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home id={work} />} />
             <Route path="/myPassion" element={<MyPassion />} />
             <Route path="/visualMuseum" element={<VisualMuseum />} />
           </Routes>

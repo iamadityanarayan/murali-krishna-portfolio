@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom";
 import SocialMediaIcons from "../SocialIcons/SocialMediaIcons";
 import { ResumeUrl } from "../../data/ResumeURL";
 
-const Menu = () => {
+const Menu = ({scrollDown}:any) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -64,7 +64,7 @@ const Menu = () => {
                   </Link>
                   <Link
                     to="/"
-                    onClick={handleClose}
+                    onClick={()=>{handleClose();scrollDown()}}
                     className="_link bg-transparent border-0 text-white text-start"
                   >
                     Work
