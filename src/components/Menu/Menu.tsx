@@ -5,6 +5,7 @@ import Icons from "../../assets/icons/Icons";
 import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import SocialMediaIcons from "../SocialIcons/SocialMediaIcons";
+import { ResumeUrl } from "../../data/ResumeURL";
 
 const Menu = () => {
   const [show, setShow] = useState(false);
@@ -82,6 +83,15 @@ const Menu = () => {
                   >
                     Visual Museum
                   </Link>
+                  <a
+                    href={ResumeUrl}
+                    className="_link text-decoration-none text-white d-flex d-lg-none my-2 _f "
+                    target="_blank"
+                    download
+                    rel="noreferrer"
+                  >
+                    Resume
+                  </a>
                 </ul>
               </div>
               <SocialMediaIcons />
