@@ -2,6 +2,7 @@ import "./footer.scss";
 import { Row, Col, Stack, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Icons from "../../assets/icons/Icons";
+import { ResumeUrl } from "../../data/ResumeURL";
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
                 Work
               </Link>
               <a
-                href="https://drive.google.com/file/d/1nV1_yGehJQNb8Qs-BJaWXKUU4cNk3pL8/view?usp=sharing"
+                href={ResumeUrl}
                 className="text-decoration-none text-white my-2 _f "
                 target="_blank"
                 download

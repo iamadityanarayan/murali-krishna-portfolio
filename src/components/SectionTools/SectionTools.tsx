@@ -19,7 +19,8 @@ type ArrayOfIcons = {
     | "inDesign"
     | "photoshop"
     | "adobeXD"
-    | "figma";
+    | "figma"
+    | "sketch";
   iconText: string;
 }[];
 
@@ -48,6 +49,10 @@ const arrayOfIcons: ArrayOfIcons = [
     iconName: "canva",
     iconText: "Canva",
   },
+  {
+    iconName: "sketch",
+    iconText: "Sketch",
+  },
 ];
 
 const SectionTools = () => {
@@ -58,20 +63,14 @@ const SectionTools = () => {
           <SectionTitle title="Tools" />
         </div>
         <div className="mx-auto section-icons">
-          <Row className="d-flex">
+          <div className="d-flex flex-wrap justify-content-around gap-3">
             {arrayOfIcons.map((item, index) => (
-              <Col
-                xs={6}
-                md={4}
-                lg={2}
-                className="text-center h my-1"
-                key={index}
-              >
-                <Icons width='100' height='100' icon={item.iconName} />
+              <div className="text-center h my-1" key={index}>
+                <Icons width="100" height="100" icon={item.iconName} />
                 <p className="my-2 text-center">{item.iconText}</p>
-              </Col>
+              </div>
             ))}
-          </Row>
+          </div>
         </div>
       </Container>
     </div>
